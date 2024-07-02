@@ -1,0 +1,13 @@
+.coupon {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+}
+
+.input {
+  flex: 1;
+  max-width: unset !important;
+}

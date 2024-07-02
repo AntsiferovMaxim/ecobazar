@@ -1,0 +1,35 @@
+.form {
+  position: relative;
+  max-width: 536px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 112px 14px 24px;
+  border: 1px solid var(--gray-100);
+  border-radius: 46px;
+  background-color: var(--white);
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray-900);
+  outline: none;
+  transition: 0.2s ease-in-out border-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: var(--gray-900);
+  }
+
+  &::placeholder {
+    color: var(--gray-500);
+  }
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}

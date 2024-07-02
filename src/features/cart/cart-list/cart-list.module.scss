@@ -1,0 +1,104 @@
+.table {
+  width: 100%;
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  border-spacing: 0;
+
+  thead {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    text-align: left;
+
+    th,
+    td {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+  }
+
+  tbody {
+    tr {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        right: 20px;
+        height: 1px;
+        background-color: var(--gray-100);
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left;
+
+    @media (max-width: 800px) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.product {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 12px;
+  }
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  overflow: hidden;
+  max-height: 100px;
+  position: relative;
+
+  image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+  }
+}
+
+.remove {
+  width: 24px;
+  min-width: 24px;
+  border: none;
+  background-color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out opacity;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.backToShop {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

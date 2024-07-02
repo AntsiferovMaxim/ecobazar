@@ -1,0 +1,22 @@
+.header {
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 93px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.divider {
+  height: 24px;
+  width: 1px;
+  background-color: var(--gray-200);
+}

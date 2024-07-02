@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 3px;
+}
+
+.title {
+  font-size: 11px;
+  line-height: 120%;
+  color: var(--gray-700);
+}
+
+.total {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  color: var(--gray-900);
+}
+
+.countBadge {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: var(--hard-primary);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 10px;
+}

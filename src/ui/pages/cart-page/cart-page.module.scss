@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-bottom: 407px;
+
+  @media (max-width: 1060px) {
+    grid-template-columns: 1fr;
+
+    .products {
+      width: 100%;
+    }
+
+    .total {
+      width: 100%;
+      flex: 1;
+    }
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  flex: 1;
+}
+
+.total {
+  flex: 0.5;
+}
